@@ -14,8 +14,6 @@ http
 
 
 // Js Memorization 
-
-
 const cache = new Map()
 const heavyTask = (n) => {
   let sum = 0;
@@ -47,11 +45,11 @@ const memo = merorizeFn((size) => {
 })
 
 console.time("Time 1")
-memo(200000)
+memo(10000)
 console.timeEnd("Time 1")
 
 console.log("\n")
 
 console.time("Time 2")
-memo(200000)
+memo(10000)
 console.timeEnd("Time 2")
